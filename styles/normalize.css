@@ -1,0 +1,38 @@
+/* normalize.css - simple course version */
+
+/* Remove default spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Improve readability */
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Remove list styling */
+ul, ol {
+  list-style: none;
+}
+
+/* Images behave nicely */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Links reset */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Buttons reset */
+button {
+  font: inherit;
+  cursor: pointer;
+}
