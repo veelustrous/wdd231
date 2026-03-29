@@ -1,0 +1,12 @@
+@media (min-width: 768px) {
+
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #members.grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+}

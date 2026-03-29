@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Glow Fashion House",
+    "address": "Lagos Island",
+    "phone": "+234 800 111 2222",
+    "website": "https://example.com",
+    "image": "glow.jpg",
+    "membership": 3
+  },
+  {
+    "name": "TechNova Ltd",
+    "address": "Ikeja",
+    "phone": "+234 800 333 4444",
+    "website": "https://example.com",
+    "image": "technova.jpg",
+    "membership": 2
+  },
+  {
+    "name": "FreshBites Foods",
+    "address": "Surulere",
+    "phone": "+234 800 555 6666",
+    "website": "https://example.com",
+    "image": "freshbites.jpg",
+    "membership": 1
+  }
+]
