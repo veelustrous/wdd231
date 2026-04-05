@@ -30,10 +30,6 @@ nav a {
   padding: 1rem;
   margin: 0.5rem;
 }
-body {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-}
 
 /* HERO */
 .hero {
@@ -47,9 +43,9 @@ body {
 }
 
 .hero-text h1 {
-  color: white;
-  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+  color: #0D3B66;
 }
+
 .hero-text {
   position: absolute;
   top: 25%;
