@@ -10,11 +10,6 @@ header {
   padding: 1rem;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-}
-
 nav a {
   color: white;
   text-decoration: none;
@@ -40,11 +35,6 @@ body {
   margin: 0;
 }
 
-body {
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-}
-
 /* HERO */
 .hero {
   position: relative;
@@ -56,6 +46,10 @@ body {
   display: block;
 }
 
+.hero-text h1 {
+  color: white;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6);
+}
 .hero-text {
   position: absolute;
   top: 25%;
