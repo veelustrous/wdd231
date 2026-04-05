@@ -40,25 +40,50 @@ body {
   margin: 0;
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+/* HERO */
 .hero {
-  padding: 2rem;
-  background: #0D3B66;
+  position: relative;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-text {
+  position: absolute;
+  top: 25%;
+  left: 10%;
   color: white;
-  text-align: center;
 }
 
 .cta {
   display: inline-block;
   background: #F4D35E;
-  padding: 10px 15px;
-  margin-top: 10px;
-  text-decoration: none;
+  padding: 12px 18px;
+  border-radius: 6px;
   color: black;
-  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
 }
 
-#spotlights div {
+/* NAV */
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+/* SPOTLIGHT CARDS */
+.card {
   border: 1px solid #ccc;
   padding: 1rem;
-  margin: 0.5rem 0;
+  margin: 1rem 0;
+  border-radius: 8px;
 }
