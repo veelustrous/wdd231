@@ -46,11 +46,8 @@ nav a {
   color: #0D3B66;
 }
 
-.hero-text {
-  position: absolute;
-  top: 25%;
-  left: 10%;
-  color: white;
+.hero-text p {
+  color: #0D3B66;
 }
 
 .cta {
