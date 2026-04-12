@@ -111,15 +111,10 @@ input, select, textarea {
 .card button {
   margin-top: 0.5rem;
   background: #F4D35E;
+  color: #000;
   border: none;
   padding: 0.5rem;
   cursor: pointer;
-}
-
-dialog {
-  border: none;
-  padding: 1rem;
-  border-radius: 10px;
 }
 
 .thankyou-card {
