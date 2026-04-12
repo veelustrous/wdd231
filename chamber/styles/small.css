@@ -159,3 +159,18 @@ textarea:focus {
   outline: 2px solid #F4D35E;
   outline-offset: 2px;
 }
+.discover-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* hover effect ONLY desktop */
+@media (min-width: 641px) {
+  .discover-card img:hover {
+    transform: scale(1.03);
+    transition: 0.3s ease;
+    filter: brightness(1.1);
+  }
+}
