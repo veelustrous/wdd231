@@ -1,4 +1,5 @@
-import { places } from "../data/discover.mjs";
+const response = await fetch("../data/discover.json");
+const places = await response.json();
 
 const grid = document.getElementById("discover-grid");
 const messageBox = document.getElementById("visit-message");

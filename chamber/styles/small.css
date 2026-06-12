@@ -1,8 +1,20 @@
+/* =========================
+   BASE STYLES
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
+
+/* =========================
+   HEADER & NAV
+========================= */
 
 header {
   background: #0D3B66;
@@ -10,28 +22,27 @@ header {
   padding: 1rem;
 }
 
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 nav a {
   color: white;
   text-decoration: none;
 }
 
-#members.grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 1rem;
+nav a.active {
+  border-bottom: 2px solid #F4D35E;
 }
 
-#members.list {
-  display: block;
-}
+/* =========================
+   HERO SECTION
+========================= */
 
-.member-card {
-  border: 1px solid #ccc;
-  padding: 1rem;
-  margin: 0.5rem;
-}
-
-/* HERO */
 .hero {
   position: relative;
 }
@@ -42,10 +53,7 @@ nav a {
   display: block;
 }
 
-.hero-text h1 {
-  color: #0D3B66;
-}
-
+.hero-text h1,
 .hero-text p {
   color: #0D3B66;
 }
@@ -60,12 +68,9 @@ nav a {
   text-decoration: none;
 }
 
-/* NAV */
-nav ul {
-  display: flex;
-  gap: 1rem;
-  list-style: none;
-}
+/* =========================
+   JOIN PAGE
+========================= */
 
 .join-main {
   padding: 1rem;
@@ -95,6 +100,37 @@ input, select, textarea {
   border-radius: 6px;
 }
 
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #F4D35E;
+  outline-offset: 2px;
+}
+
+/* =========================
+   MEMBERS SECTION
+========================= */
+
+#members.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+#members.list {
+  display: block;
+}
+
+.member-card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+/* =========================
+   CARDS (JOIN PAGE)
+========================= */
+
 .membership-cards {
   display: grid;
   gap: 1rem;
@@ -117,6 +153,10 @@ input, select, textarea {
   cursor: pointer;
 }
 
+/* =========================
+   THANK YOU PAGE
+========================= */
+
 .thankyou-card {
   padding: 1rem;
   background: #f4f4f4;
@@ -132,33 +172,11 @@ input, select, textarea {
   text-decoration: none;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-* {
-  box-sizing: border-box;
-}
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
-dialog {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-nav a.active {
-  border-bottom: 2px solid #F4D35E;
-}
-input:focus,
-select:focus,
-textarea:focus {
-  outline: 2px solid #F4D35E;
-  outline-offset: 2px;
-}
+/* =========================
+   DISCOVER GRID (IMPORTANT FIX)
+   NAMED GRID AREAS REQUIRED
+========================= */
+
 .discover-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -166,11 +184,101 @@ textarea:focus {
   padding: 1rem;
 }
 
-/* hover effect ONLY desktop */
+.discover-card {
+  display: grid;
+  grid-template-areas:
+    "title"
+    "image"
+    "address"
+    "description"
+    "button";
+  gap: 0.5rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+/* assign grid areas */
+.discover-card h2 {
+  grid-area: title;
+}
+
+.discover-card figure {
+  grid-area: image;
+  margin: 0;
+}
+
+.discover-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: 0.3s ease;
+}
+
+.discover-card address {
+  grid-area: address;
+  font-style: normal;
+}
+
+.discover-card p {
+  grid-area: description;
+}
+
+.discover-card button {
+  grid-area: button;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  padding: 1rem;
+}
+
+/* =========================
+   ANIMATION
+========================= */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =========================
+   DISCOVER RESPONSIVE LAYOUTS
+   (3 REQUIRED LAYOUTS)
+========================= */
+
+/* TABLET */
 @media (min-width: 641px) {
+  .discover-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .discover-card {
+    grid-template-areas:
+      "image title"
+      "image address"
+      "image description"
+      "image button";
+  }
+
   .discover-card img:hover {
     transform: scale(1.03);
-    transition: 0.3s ease;
     filter: brightness(1.1);
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1025px) {
+  .discover-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
 }
