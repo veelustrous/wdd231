@@ -1,0 +1,29 @@
+[
+  {
+    "name": "Zara Luxe",
+    "role": "Makeup Artist",
+    "location": "Lagos",
+    "experience": "5 years",
+    "price": "$80/session",
+    "image": "images/mua1.webp",
+    "bio": "Luxury glam specialist for editorial shoots."
+  },
+  {
+    "name": "Maya Glow",
+    "role": "Model",
+    "location": "Lekki",
+    "experience": "3 years",
+    "price": "Negotiable",
+    "image": "images/model1.webp",
+    "bio": "Commercial and fashion model."
+  },
+  {
+    "name": "Tee Snaps",
+    "role": "Photographer",
+    "location": "Ikeja",
+    "experience": "6 years",
+    "price": "$120/session",
+    "image": "images/photo1.webp",
+    "bio": "Editorial and lifestyle photography."
+  }
+]

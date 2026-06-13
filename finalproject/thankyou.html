@@ -1,0 +1,13 @@
+<h1>Thank you!</h1>
+
+<p id="output"></p>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+
+document.getElementById("output").innerHTML = `
+Name: ${params.get("name")} <br>
+Role: ${params.get("role")} <br>
+Message: ${params.get("message")}
+`;
+</script>

@@ -1,0 +1,38 @@
+:root {
+  --primary: #0D3B66;     /* deep luxury blue */
+  --accent: #F4D35E;      /* gold */
+  --bg: #FAF7F2;          /* soft cream */
+  --text: #1A1A1A;        /* clean black */
+  --card: #FFFFFF;
+}
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #FAF7F2;
+}
+
+header {
+  background: #0D3B66;
+  color: white;
+  padding: 1rem;
+}
+
+nav {
+  display: none;
+}
+
+nav.show {
+  display: block;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.grid div {
+  background: white;
+  padding: 1rem;
+}

@@ -1,0 +1,20 @@
+@media (min-width: 768px) {
+
+  nav {
+    display: flex !important;
+    gap: 1rem;
+  }
+
+  #menuBtn {
+    display: none;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .grid img:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+  }
+}
